@@ -1,3 +1,5 @@
+# Markdown
+
 ```mermaid
 erDiagram
   direction lr
@@ -22,6 +24,7 @@ erDiagram
     string    id_petugas    FK
   }
   kategori {
+    string    id
     string    nama
   }
   
@@ -32,16 +35,19 @@ erDiagram
   }
 
   petugas {
+    string    id
     string    nama
   }
 
   peminjam {
+    string    id
     string    nama
     string    no_hp
     string    alamat
   }
 
   transaksi {
+    string    id
     string    id_peminjam
     string    id_buku
     string    dikembalikan
