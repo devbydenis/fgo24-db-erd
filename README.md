@@ -1,8 +1,8 @@
 ```mermaid
 erDiagram
-  direction rl
+  direction lr
   buku ||--o{ kategori : termasuk_dalam
-  rak_buku ||--o{ buku: disimpan
+  buku ||--o{ rak_buku: disimpan
   buku ||--o{ petugas: mengelola
   peminjam }o--|| transaksi: meminjam
   transaksi ||--o{ buku: dipinjam
